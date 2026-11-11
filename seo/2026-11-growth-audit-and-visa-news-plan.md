@@ -8,7 +8,9 @@ Scope: live site `https://nvconsult.eu` (WordPress, Elementor, Site Kit) and the
 ## 0. Read first: what I could and could not check
 
 * [x] Live site crawled via Firecrawl: homepage, `/guides/`, `/guides/germany-opportunity-card/`, `/countries/germany/`, `robots.txt`, `sitemap_index.xml`, post/category sitemaps.
-* [x] Legacy static site in git history (`nvsion _public_html.zip`, commit `9b41caa`) inspected. **It is not the live site.** The repo's static Travisa-based pages are a separate, older build.
+* [x] Public WordPress REST API read: 3 posts, 1 category (`uncategorized`).
+* [ ] WordPress admin (authenticated) access: **not yet working.** The saved application password was rejected by WordPress (401, invalid application password).
+* The legacy static zip in git history is out of scope and was not used.
 * [ ] **Search Console and GA4 data: not accessible.** Frase trial has expired; OpenSEO has no projects; Ahrefs returns "Insufficient plan" for site metrics. I have **no traffic, impression, or ranking numbers**, so this audit is about crawlability, indexing signals, and content, not measured decline.
 * [ ] Sandbox cannot reach `nvconsult.eu` directly (curl returns 000). All live checks used Firecrawl.
 
